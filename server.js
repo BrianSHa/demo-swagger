@@ -1,12 +1,12 @@
 'use strict';
 
-
 const bodyParser = require('body-parser');
 const express = require('express');
 const openapi = require('express-openapi');
-const v1ApiDoc = require('./v1/info');
 const os = require('os');
 const pkg = require('./package');
+const v1ApiDoc = require('./v1/info');
+
 
 // model factories
 const demoFactory = require('./lib/models/demo');
