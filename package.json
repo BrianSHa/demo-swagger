@@ -1,0 +1,22 @@
+{
+  "name": "demo-swagger",
+  "version": "1.0.0",
+  "description": "A start-up app for using swagger/open-api",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "test"
+  },
+  "keywords": [
+    "swagger",
+    "open-api",
+    "express"
+  ],
+  "author": "habs",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-openapi": "^0.35.0"
+  }
+}
