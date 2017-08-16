@@ -56,14 +56,6 @@ openapi.initialize({
 
 app.use('/swagger-ui', express.static('swagger-ui'));
 
-app.get('/swagger-ui', (req, res, next)=>{
-  if(!req.query.url){
-    res.redirect('/swagger-ui?url=/v1/info');
-    return;
-  }
-  next();
-})
-
 // init
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
